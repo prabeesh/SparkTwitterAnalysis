@@ -14,7 +14,6 @@ libraryDependencies ++= Seq("org.apache.spark" %% "spark-core" % "0.9.0-incubati
 
 resolvers += "Akka Repository" at "http://repo.akka.io/releases/"
 
-<<<<<<< HEAD
 mergeStrategy in assembly <<= (mergeStrategy in assembly) { (old) =>
   {
     case PathList("javax", "servlet", xs @ _*) => MergeStrategy.last
@@ -25,8 +24,6 @@ mergeStrategy in assembly <<= (mergeStrategy in assembly) { (old) =>
   }
 }
 
-=======
->>>>>>> b12b7db040aad28f85d21a31c7cce596196d9523
 // put all libs in the lib_managed directory, that way we can distribute eclipse project files
 retrieveManaged := true
     
