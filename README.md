@@ -5,6 +5,4 @@ A standalone application using the Spark API in Scala. The application uses Simp
 
 sbt clean
 
-sbt package 
-
-sbt run
+sbt assembly
