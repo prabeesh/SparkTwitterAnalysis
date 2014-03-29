@@ -7,4 +7,4 @@ Using sbt-assembly plugin, Create a fat JAR of your project with all of its depe
 
 In sbt use the command assembly to create a fat JAR
 
-> sbt eclipse
+> sbt assembly
