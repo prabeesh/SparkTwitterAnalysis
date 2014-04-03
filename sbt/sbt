@@ -4,9 +4,9 @@
 # version of sbt. If there is no system version of sbt it attempts to download
 # sbt locally.
 
-URL1=http://typesafe.artifactoryonline.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.12.4/sbt-launch.jar
-URL2=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.12.4/sbt-launch.jar
-JAR=sbt/sbt-launch-0.12.4.jar
+URL1=http://typesafe.artifactoryonline.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.12.0/sbt-launch.jar
+URL2=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.12.0/sbt-launch.jar
+JAR=sbt/sbt-launch-0.12.0.jar
 
 # Download sbt launch jar if it hasn't been downloaded yet
 if [ ! -f ${JAR} ]; then
