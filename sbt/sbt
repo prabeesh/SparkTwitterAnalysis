@@ -1,0 +1,5 @@
+#!/bin/bash
+java \
+  -Xmx1200m -XX:MaxPermSize=350m -XX:ReservedCodeCacheSize=256m \
+    -jar $(dirname $0)/sbt-launch-*.jar \
+      "$@"
