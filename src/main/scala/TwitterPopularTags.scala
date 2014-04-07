@@ -21,10 +21,17 @@ object TwitterPopularTags {
     val (master, filters) = (args(0), args.slice(5, args.length))
 
     // Twitter Authentication credentials
-    System.setProperty("twitter4j.oauth.consumerKey", args(1))
-    System.setProperty("twitter4j.oauth.consumerSecret", args(2))
-    System.setProperty("twitter4j.oauth.accessToken", args(3))
-    System.setProperty("twitter4j.oauth.accessTokenSecret", args(4))
+    val configKeys = List("consumerKey", "consumerSecret", "accessToken", "accessTokenSecret")
+
+    val map = configKeys.zip(args.slice(1, 5).toList).toMap
+
+    configKeys.foreach(key => {
+      if (!map.contains(key)) {
+        throw new Exception("Error setting OAuth authenticaion - value for " + key + " not found")
+      }
+      val fullKey = "twitter4j.oauth." + key
+      System.setProperty(fullKey, map(key))
+    })
 
     
 
