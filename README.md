@@ -8,4 +8,4 @@ Using sbteclipse plugin, create Eclipse project definitions.
 For more details refer https://github.com/typesafehub/sbteclipse
 
 In sbt use the command eclipse to create Eclipse project files
-> sbt eclipse
+> sbt/sbt eclipse
