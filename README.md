@@ -1,7 +1,7 @@
 SparkTwitterAnalysis
 ====================
 
-A standalone application using the Spark API in Scala. The application uses Simple Build(SBT) for building the project.
+A standalone application using the Spark API in Scala. The application uses Simple Build Tools(SBT) for building the project.
 
 Using sbt-assembly plugin, Create a fat JAR of your project with all of its dependencies.
 
